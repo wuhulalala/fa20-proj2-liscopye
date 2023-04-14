@@ -12,8 +12,7 @@ abs:
     # Prologue
 
     # return 0
-    mv a0, zero
-
-    # Epilogue
-
+    bge a0, x0, greater
+    sub a0, x0, a0
+greater:
     ret
